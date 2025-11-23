@@ -12,7 +12,7 @@ public class KafeDoWhile11 {
         
 
         do {
-            System.out.print("Enter Customer Name:  ");
+            System.out.print("Enter Customer Name (type 'cancel' to exit):  ");
             customerName = sc.nextLine();
             if (customerName.equalsIgnoreCase("cancel")) {
                 System.out.println("Transaction Cancelled.");
@@ -29,7 +29,7 @@ public class KafeDoWhile11 {
             totalPrice = (coffe * coffeePrice) + (tea * teaPrice) + (bread * breadPrice);
             System.out.println("Total To Be Paid: Rp " + totalPrice);
             sc.nextLine();
-        } while (false); 
+        } while (true); 
 
         System.out.println("All Transactions Completed.");
         
