@@ -4,11 +4,11 @@ public class SiakadFor11 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int pass = 0;
-        int fail = 0;
+        int passCount = 0;
+        int failCount = 0;
         double grade;
-        double highestGrade = 100;
-        double lowestGrade = 0;
+        double highestGrade = 0;
+        double lowestGrade = 100;
 
         for (int i = 1; i <= 10; i++) {
 
@@ -19,14 +19,14 @@ public class SiakadFor11 {
             }   if (grade < lowestGrade) {
                 lowestGrade = grade;
             } if (grade >= 60) {
-                pass++;
+                passCount++;
             } else {
-                fail++;
+                failCount++;
             }
         }   System.out.println("The Highest Grade Is:   " + highestGrade);
             System.out.println("The Lowest Grade Is:    " + lowestGrade );
-            System.out.println("Number of Student Pssed:   " + pass );
-            System.out.println("Number of Student Failed:   " + fail );
+            System.out.println("Number of Student Passed:   " + passCount );
+            System.out.println("Number of Student Failed:   " + failCount );
     
             sc.close();
     }
